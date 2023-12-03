@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 2px solid transparent;
+    background: url('bgimg.jpg') rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    font-family: 'Poppins';
+}
+
+.header{
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+
+.site-title{
+    color: white;
+    display: inline;
+}
+
+.nav{
+    display: inline;
+    /* border: 2px solid blue; */
+    padding: 10px;
+    float: right;
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline;
+}
+
+.nav li a{
+    text-decoration: underline transparent;
+    text-underline-offset: 0.2em;
+    color: white;
+    margin: 20px;
+    font-size: 1.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.nav li a:hover{
+    text-decoration-color: red;
+    text-underline-offset: 0.5em;
+}
+
+.main-content{
+    border: 2px solid transparent;
+    min-height: 100vh;
+}
+
+.tagline{
+    /* border: 2px solid blue; */
+    color: white;
+    padding: 10px;
+    height: 100px;
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.below-tagline{
+    /* border: 2px solid red; */
+    color: white;
+    text-align: justify;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flight-table {
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    color: white;
+    margin-top: 10vh;
+  }
+  
+.flight-table th, .flight-table td{
+    padding: 10px;
+    text-align: center;
+}
+
+.table-heading{
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.footer{
+    color: white;
+    font-size: 2em;
+    margin-top: 7vh;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width : 780px){
+    .header{
+        display: flex;
+    }
+    .nav{
+        display: block;
+        margin-left: 50%;
+        border-left: 2px solid red;
+    }
+    .nav li{
+        display: block;
+        margin-top: 10px;
+    }
+    .footer{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width : 525px){
+    .main-content{
+        padding: 20px;
+    }
+    .below-tagline{
+        margin-top: 9vh;
+    }
+    .footer{
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width : 415px){
+    .below-tagline{
+        margin-top: 15vh;
+        margin-left: 8%;
+    } 
+}
+
+@media screen and (max-width : 415px){
+    .below-tagline{
+        margin-top: 22vh;
+    }
+}
